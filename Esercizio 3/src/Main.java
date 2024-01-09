@@ -6,16 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        do {
+        while(true) {
             System.out.print("Inserisci una stringa: ");
             String str = scanner.nextLine();
-            if(str.equals(":q")){
+            if (str.equals(":q")) {
                 System.out.print("Fine loop");
                 break;
             } else {
                 stringComma(str);
             }
-        }while(true);
+        }
     }
 
     public static void stringComma(String str) {
